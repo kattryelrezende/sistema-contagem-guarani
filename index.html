@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Página Inicial</title>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="nav-container">
+        <div class="nav-logo">
+            <img src="src/nav-logo.png" alt="Logo do Sistema de Contagem Guarani">
+        </div>
+        <div class="nav-items">
+            <ul>
+                <li class="nav-item"><a href="#">Vídeos</a></li>
+                <li class="nav-item"><a href="curiosidades.html">Curiosidades</a></li>
+                <li class="nav-item"><a href="#">Sobre</a></li>
+                <li class="nav-item"><a href="#">Simulador</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO-SECTION -->
+    <section class="landing-page img-background">
+        <div class="landing-main">
+            <!-- LADO ESQUERDO -->
+            <main class="left-side">
+                <!-- TÍTULO -->
+                <h1 class="landing-title">Conheça agora o <yellow-highlight>Sistema<br> de Contagem Guarani</yellow-highlight></h1>
+    
+                <!-- CAIXA COM DESCRIÇÃO -->
+                <div class="wood-box bg-wood">
+                    <p>Entenda como o as raízes do povo guarani<br> tiveram influência na história da computação</p>
+                </div>
+    
+                <!-- BOTÃO DE MADEIRA -->
+                <div class="wood-btn-wrap">
+                    <button onclick="downScroll()" class="wood-btn bg-wood" id="landing-btn" title="Quero saber mais">Quero saber mais</button>
+                    <p>Clique para mais informações</p>
+                </div>
+    
+            </main>
+            
+            <!-- LADO DIREITO -->
+            <aside class="right-side">
+    
+                <!-- CONTAINER DO CARROSSEL -->
+                <div class="caroussel-container">
+                    <img class="wood-border" src="src/quadro-maos.png" alt="Uma tabela com representações numéricas a partir do sistema de contagem com mãos guarani">
+                </div>
+                
+                <div class="caroussel-controller">
+                    <form action="#" class="caroussel-buttons">
+                        <input checked="checked" type="radio" name="caroussel">
+                        <input type="radio" name="caroussel">
+                        <input type="radio" name="caroussel">
+                    </form>
+                </div>
+                
+            </aside>
+        </div>
+        <!-- FOOTER DA HERO SECTION -->
+        <div class="hero-footer">
+            <!-- CRÉDITOS DO FINAL DA SECTION -->
+            <p class="credits">Um projeto de alunos da Universidade de São Paulo</p>
+
+            <div class="college-logo">
+                <img src="src/LOGO-ICMC.png" alt="Logo do ICMC">
+                <img id="logo-usp" src="src/logo-usp.png" alt="Logo da USP">
+            </div>
+    </section>
+
+
+    <section class="intro-guarani-page img-background">
+        <div class="wood-title bg-wood">
+            <h1>Quem são os guarani?</h1>
+        </div>
+
+        <div class="landing-main">
+            <div class="left-side">
+                <div class="wood-text">
+                    <p>Os Guarani são uma das etnias indígenas mais representativas das Américas, com uma presença marcante em uma vasta região da América do Sul, incluindo partes da Bolívia, Paraguai, Argentina, Uruguai e a porção centro-meridional do território brasileiro.</p>
+                    <p>Este povo é frequentemente designado como "povos" (do espanhol "<i>pueblo</i>"), devido à sua extensa população dividida em diversos subgrupos étnicos, cada um com suas  características dialetais, culturais e cosmológicas específicas, o que contribui para a riqueza da identidade guarani.</p>
+                    <p>A preservação da cultura guarani ao longo dos séculos é essencial para a manutenção da identidade desses povos, refletindo uma forte ligação com a terra e uma resiliência diante dos desafios históricos, que inspira tanto os guaranis quanto outros interessados na diversidade cultural sul-americana.
+                    </p>
+                </div>
+            </div>
+            <div class="right-side">
+                <aside class="guarani-pictures">
+                    <picture class="intro-guarani-pic">
+                        <img src="src/guarani-map.png" alt="Mapa da presença guarani no continente americano">
+                        <p>Em amarelo, região com presença de povos de etnia Guarani - Reprodução | Creative Commons</p>
+                    </picture>
+                    <picture class="intro-guarani-pic">
+                        <img src="src/guarani-dance.png" alt="Fotografia de guaranis">
+                        <p>Homens de etnia Guarani na dança lúdica xondarê - Reprodução | Cultura Em Movimento</p>
+                    </picture>
+                </aside>
+            </div>
+        </div>
+    </section>
+    <section class="guarani-info-page img-background">
+        <div class="leaf-title">
+            <h1>Saber mais sobre a história é aprender<br>com o passado</h1>
+        </div>
+        <form action="#" class="form-info">
+            <label class="info-control">
+                <input type="radio" name="select-info" checked="checked"/>
+                Origem
+            </label>
+            <label class="info-control">
+                <input type="radio" name="select-info"/>
+                Visibilidade
+            </label>
+            <label class="info-control">
+                <input type="radio" name="select-info"/>
+                Linguagem Oral
+            </label>
+            <label class="info-control">
+                <input type="radio" name="select-info"/>
+                Preservação
+            </label>
+        </form>
+        <div class="guarani-info">
+            <div class="guarani-info-text">
+                <h2>A origem do sistema</h2>
+                <p>O sistema de contagem guarani é baseado em 5, contando em grupos   de 5 unidades, refletindo a estrutura dos dedos das mãos e dos caroços do caule da mandioca, que se repetem a cada 5.</p>
+                <p>Na escrita, círculos representam os caroços individuais, enquanto traços horizontais simbolizam os grupos de cinco, os caules caracterizados pelo padrão distinto.</p>
+            </div>
+            <picture class="guarani-info-picture">
+                <img src="src/guarani-plantando.png" alt="Foto de Crianças guaranis plantando">
+                <p>Crianças plantando árvores na aldeia Guarani Tekoa Pyau<br>Foto: Felipe Martins/ Go Martins</p>
+            </picture>
+        </div>
+    </section>
+    <section class="intro-sistema-section img-background">
+        <div class="wood-title bg-wood">
+            <h1>Como funciona o sistema de contagem?</h1>
+        </div>
+        <div class="intro-sistema-container">
+            <div class="intro-sistema-card">
+                <img src="src/sistema1.png" alt="Símbolo de representação da escrita">
+                <p class="info-card-title">ESCRITA</p>
+                <div class="info-card-sistema">
+                    <p>Na forma escrita do sistema de contagem guarani, os círculos representam os caroços e os traços representam o caule da mandioca, com esse padrão se repetindo conforme se escreve na vertical.</p>
+                </div>
+            </div>
+            <div class="intro-sistema-card">
+                <img src="src/sistema2.png" alt="Símbolo de representação de exemplos de uso">
+                <p class="info-card-title">EXEMPLO DE USO</p>
+                <div class="info-card-sistema">
+                    <p>No exemplo acima, as linhas resultam em 15 (5 x 3), e os círculos somados totalizam 3.</p>
+                    <p>Em seguida, somamos os dois resultados: 3 + 15 = 18, obtendo assim o resultado final.</p>
+                </div>
+            </div>
+            <div class="intro-sistema-card">
+                <img src="src/sistema3.png" alt="Ilustração de outros símbolos">
+                <p class="info-card-title">OUTROS SÍMBOLOS</p>
+                <div class="info-card-sistema">
+                    <p>Na escrita guarani, há uma variedade de símbolos com significados e histórias distintas!</p>
+                    <p>Clique abaixo para saber mais!</p>
+                    <input type="submit" class="sistema-info-btn" value="Mais Detalhes">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="intro-video-section img-background">
+        <h1 class="landing-video-title">Vídeo Introdutório</h1>
+        <img id="em-construcao-card" src="src/em-construcao-card.png" alt="Card com os escritos: 'em construção'">
+        <img src="src/video-buttons.png" alt="Players do video" class="players">
+    </section>
+    <section class="intro-sistema-section img-background hand-section">
+        <div class="wood-title bg-wood">
+            <h1>Contando com as mãos</h1>
+        </div>
+        <div class="info-card-sistema" id="hand-card">
+            <p>Os Guarani têm uma preferência por <b>contar em grupos de cinco elementos</b>, evitando formar pares dentro de um conjunto de seis elementos para manter essa preferência. Essa prática é influenciada pela forma como percebem o mundo ao seu redor, onde muitos elementos são concebidos em pares, como sol e lua, homem e mulher, e as duas orelhas.</p>
+            <p> A escolha pela base cinco na contagem reflete sua <b>cosmovisão e a maneira como interagem com o mundo</b>, enquanto a tendência por formar pares dentro desses grupos ressoa com sua concepção da dualidade presente na natureza e na organização social.<br></p>
+            <p>Abaixo veja uma tabela mostrando como os Guarani percebem a <b>contagem de 1 a 10 usando as mãos:</b></p>
+        </div>
+        <img id="tabela-contagem-maos" src="src/tabela-contagem-mãos.png" alt="Tabela representativa do sistema de contagem manual">
+    </section>
+    <section class="intro-sistema-section img-background">
+        <div class="feedback">
+            <form action="#" class="feedback-form">
+            <h1>Feedback</h1>
+            <div class="feedback-container">
+                <div class="left-side feedback-inputs">
+                    <input class="feedback-text" type="text" placeholder="Nome">
+                    <input class="feedback-text" type="email" placeholder="Email">
+                    <textarea placeholder="Nos descreva como foi sua experiência no site"></textarea>
+                </div>
+                <div class="right-side">
+                    <p>Sua avaliação:</p>
+                    <div class="stars">
+                        <img src="src/star.png" alt="estrela">
+                        <img src="src/star.png" alt="estrela">
+                        <img src="src/star.png" alt="estrela">
+                        <img src="src/star.png" alt="estrela">
+                        <img src="src/star.png" alt="estrela">
+                    </div>
+                </div>
+            </div>
+            </form>
+        </div>
+        <button onclick="topFunction()" id="voltar-topo-btn" title="Voltar ao topo">Voltar ao topo ▲</button>
+    </section>
+    <footer class="landing-footer">
+        <div class="footer-logo">
+            <img src="src/nav-logo.png" alt="Logo do Sistema de Contagem Guarani">
+        </div>
+        <ul class="footer-items">
+            <li>Fontes</li>
+            <li>Institucional</li>
+            <li>Contato</li>
+            <li>Vídeos</li>
+        </ul>
+        <div class="footer-college-logos">
+            <img src="src/logo-usp-pequena.png" alt="Logo USP">
+            <img src="src/LOGO-ICMC-PEQUENA.png" alt="Logo ICMC">
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

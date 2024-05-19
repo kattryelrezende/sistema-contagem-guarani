@@ -6,6 +6,10 @@ function downScroll() {
     window.scrollTo({top: 956, behavior: 'smooth'});
 }
 
+function scrollToHand() {
+    window.scrollTo({top: 5150, behavior: 'smooth'});
+}
+
 // Troca os elementos informativos na sessão de info control do index
 document.addEventListener('DOMContentLoaded', function () {
     const radios = document.querySelectorAll('input[name="select-info"]');

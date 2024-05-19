@@ -389,6 +389,18 @@ body::-webkit-scrollbar-thumb {
     cursor: pointer;
 }
 
+.white-btn {
+    background-color: var(--pure-white);
+    color: var(--forest-green);
+    margin-top: 1.5rem;
+    padding: .7rem 2rem;
+    border-radius: 50px;
+    font-family: "Poppins Bold";
+    font-size: 1.5rem;
+    border: none;
+    cursor: pointer;
+}
+
 .a-container {
     width: fit-content;
     height: fit-content;

@@ -123,7 +123,7 @@ yellow-highlight {
     border-radius: 50px;
     font-family: "Poppins Bold";
     font-size: 1.6rem;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.8) !important;
 }
 
 .caroussel-item:hover .overlay {

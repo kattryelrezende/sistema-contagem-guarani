@@ -3,21 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="icon" type="image/x-icon" href="src/LOGO-icon.png">
     <title>Página Inicial</title>
 </head>
 <body>
     <!-- NAVBAR -->
     <nav class="nav-container">
-        <div class="nav-logo">
+        <a href="index.html" class="nav-logo">
             <img src="src/nav-logo.png" alt="Logo do Sistema de Contagem Guarani">
-        </div>
+        </a>
         <div class="nav-items">
             <ul>
-                <li class="nav-item"><a href="#">Vídeos</a></li>
                 <li class="nav-item"><a href="curiosidades.html">Curiosidades</a></li>
-                <li class="nav-item"><a href="#">Sobre</a></li>
-                <li class="nav-item"><a href="#">Simulador</a></li>
+                <li class="nav-item"><a href="#">Símbolos</a></li>
+                <li class="nav-item"><a href="oralidade.html">Oralidade</a></li>
+                <li class="nav-item"><a href="#">Vídeos</a></li>
             </ul>
         </div>
     </nav>
@@ -43,23 +45,52 @@
     
             </main>
             
-            <!-- LADO DIREITO -->
-            <aside class="right-side">
-    
-                <!-- CONTAINER DO CARROSSEL -->
-                <div class="caroussel-container">
+        <!-- LADO DIREITO -->
+        <aside class="right-side">
+
+            <!-- CONTAINER DO CARROSSEL -->
+            <div class="caroussel-container">
+                <div class="caroussel-item">
                     <img class="wood-border" src="src/quadro-maos.png" alt="Uma tabela com representações numéricas a partir do sistema de contagem com mãos guarani">
+                    <div class="overlay">
+                        <div class="card-caroussel-title">
+                            <h3>CONTAR COM AS MÃOS</h3>
+                        </div>
+                        <p class="card-caroussel-p">Entenda como os Guarani entendem a contagem com as mãos e os porquês de seu modo de visualizar quantidades</p>
+                        <a href="#" class="card-caroussel-btn">Entender</a>
+                    </div>
                 </div>
-                
-                <div class="caroussel-controller">
-                    <form action="#" class="caroussel-buttons">
-                        <input checked="checked" type="radio" name="caroussel">
-                        <input type="radio" name="caroussel">
-                        <input type="radio" name="caroussel">
-                    </form>
+                <div class="caroussel-item over2">
+                    <img class="wood-border" src="src/guarani-segurando-milho.png" alt="Foto de guarani segurando milhos">
+                    <div class="overlay" class="over2">
+                        <div class="card-caroussel-title">
+                            <h3>DESCUBRA UM OUTRO JEITO DE VER O MUNDO</h3>
+                        </div>
+                        <p class="card-caroussel-p">Descubra os aspectos culturais e sociais que conferem ao sistema de contagem significados que vão além dos números</p>
+                        <a href="curiosidades.html" class="card-caroussel-btn">Descobrir</a>
+                    </div>
                 </div>
-                
-            </aside>
+                <div class="caroussel-item over3">
+                    <img class="wood-border" src="src/simbolos-guarani-ceu.png" alt="Foto de guarani segurando milhos">
+                    <div class="overlay" class="over3">
+                        <div class="card-caroussel-title">
+                            <h3>NÚMEROS E ASTROS</h3>
+                        </div>
+                        <p class="card-caroussel-p">Explore o vasto universo de símbolos cujos significados vão muito além de sua representação numérica</p>
+                        <a href="#" class="card-caroussel-btn">Explorar</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="caroussel-controller">
+                <form action="#" class="caroussel-buttons">
+                    <input id="radio-1" checked="checked" type="radio" name="caroussel">
+                    <input id="radio-2" type="radio" name="caroussel">
+                    <input id="radio-3" type="radio" name="caroussel">
+                </form>
+            </div>
+            
+        </aside>
         </div>
         <!-- FOOTER DA HERO SECTION -->
         <div class="hero-footer">
@@ -72,8 +103,9 @@
             </div>
     </section>
 
+    <div class="div-line">
 
-    <section class="intro-guarani-page img-background">
+    <section class="intro-guarani-page img-background leaves-background">
         <div class="wood-title bg-wood">
             <h1>Quem são os guarani?</h1>
         </div>
@@ -101,32 +133,36 @@
             </div>
         </div>
     </section>
-    <section class="guarani-info-page img-background">
-        <div class="leaf-title">
-            <h1>Saber mais sobre a história é aprender<br>com o passado</h1>
+
+    <div class="div-line">
+
+    <section class="guarani-info-page img-background primal-background">
+        <div class="leaf-box">
+            <h1 class="leaf-title">Saber mais sobre a história é aprender<br>com o passado</h1>
         </div>
         <form action="#" class="form-info">
-            <label class="info-control">
-                <input type="radio" name="select-info" checked="checked"/>
+            <label class="info-control active">
+                <input type="radio" name="select-info" value="origem" checked="checked"/>
                 Origem
             </label>
             <label class="info-control">
-                <input type="radio" name="select-info"/>
+                <input type="radio" name="select-info" value="visibilidade"/>
                 Visibilidade
             </label>
             <label class="info-control">
-                <input type="radio" name="select-info"/>
+                <input type="radio" name="select-info" value="linguagem"/>
                 Linguagem Oral
             </label>
             <label class="info-control">
-                <input type="radio" name="select-info"/>
+                <input type="radio" name="select-info" value="preservacao"/>
                 Preservação
             </label>
         </form>
-        <div class="guarani-info">
+    
+        <div class="guarani-info" id="origem">
             <div class="guarani-info-text">
                 <h2>A origem do sistema</h2>
-                <p>O sistema de contagem guarani é baseado em 5, contando em grupos   de 5 unidades, refletindo a estrutura dos dedos das mãos e dos caroços do caule da mandioca, que se repetem a cada 5.</p>
+                <p>O sistema de contagem guarani é baseado em 5, contando em grupos de 5 unidades, refletindo a estrutura dos dedos das mãos e dos caroços do caule da mandioca, que se repetem a cada 5.</p>
                 <p>Na escrita, círculos representam os caroços individuais, enquanto traços horizontais simbolizam os grupos de cinco, os caules caracterizados pelo padrão distinto.</p>
             </div>
             <picture class="guarani-info-picture">
@@ -134,8 +170,49 @@
                 <p>Crianças plantando árvores na aldeia Guarani Tekoa Pyau<br>Foto: Felipe Martins/ Go Martins</p>
             </picture>
         </div>
+    
+        <div class="guarani-info" id="visibilidade">
+            <div class="guarani-info-text">
+                <h2>Visibilidade</h2>
+                <p>Por séculos, as relações entre indígenas e não indígenas no Brasil foram marcadas pela imposição da cultura dominante sobre as culturas nativas. Isso incluiu a marginalização dos conhecimentos e práticas matemáticas dos povos indígenas. A educação colonial visava negar a diversidade dos indígenas e incorporá-los à sociedade nacional, resultando em um processo de "esquecimento" de suas culturas.</p>
+                <p>Nosso site busca problematizar essas questões e promover uma perspectiva que valorize os modos não hegemônicos de entender e contar o mundo, incluindo o sistema de contagem Guarani, reconhecendo sua importância cultural.</p>
+            </div>
+            <picture class="guarani-info-picture">
+                <img src="src/lider-guarani.png" alt="Foto de Líder Guarani">
+                <p>Líder Guarani Ládio Veron<br>Foto: Eleanor K. Russell/ Survival</p>
+            </picture>
+        </div>
+    
+        <div class="guarani-info" id="linguagem">
+            <div class="guarani-info-text">
+                <h2>Mais do que números</h2>
+                <p>O sistema de contagem guarani tem raízes muito mais profundas do que simplesmente números. Ele também tem importância para a gramática e comunicação diária do povo Guarani, podendo ser usado em práticas religiosas, culturais e até mesmo simplesmente para a comunicação diária.</p>
+                <p>Saiba mais clicando no botão abaixo!</p>
+                <a href="linguagem-oral.html" class="a-container"><input type="submit" class="green-btn" value="Saiba mais"></a>
+            </div>
+            <picture class="guarani-info-picture">
+                <img src="src/cesto-guarani.png" alt="Foto de Cesto Guarani">
+                <p>Ajaka: Tipo de cesto e unidade de medida guarani<br>Foto: Aldeia Jejy-ty</p>
+            </picture>
+        </div>
+    
+        <div class="guarani-info" id="preservacao">
+            <div class="guarani-info-text">
+                <h2>Preservando a memória e a história</h2>
+                <p>Os Guarani têm aspectos culturais distintos, como sua cosmologia, língua e práticas sociais, que os diferenciam de outros grupos indígenas e não indígenas, formando seu modo de vida. Seu sistema de contagem e símbolos não são separados de sua cultura, servindo tanto para quantificar como para expressar elementos culturais.</p>
+                <p>Estudar o sistema de contagem Guarani não apenas envolve matemática, mas também oferece estratégias de preservação cultural. A preservação desse sistema é crucial, pois a matemática é uma atividade humana presente em todas as culturas, sendo essencial para manter a identidade e a diversidade cultural dos Guarani.</p>
+            </div>
+            <picture class="guarani-info-picture">
+                <img src="src/milho.png" alt="Foto de Líder Guarani">
+                <p>O milho: Essencial para a cultura e para o sistema de contagem guarani<br>Instituto de Permacultura do Paraná - IPEPA</p>
+            </picture>
+        </div>
     </section>
-    <section class="intro-sistema-section img-background">
+
+    <div class="div-line">
+
+    
+    <section class="intro-sistema-section img-background leaves2-background">
         <div class="wood-title bg-wood">
             <h1>Como funciona o sistema de contagem?</h1>
         </div>
@@ -143,14 +220,14 @@
             <div class="intro-sistema-card">
                 <img src="src/sistema1.png" alt="Símbolo de representação da escrita">
                 <p class="info-card-title">ESCRITA</p>
-                <div class="info-card-sistema">
+                <div class="info-card-sistema yellow-card">
                     <p>Na forma escrita do sistema de contagem guarani, os círculos representam os caroços e os traços representam o caule da mandioca, com esse padrão se repetindo conforme se escreve na vertical.</p>
                 </div>
             </div>
             <div class="intro-sistema-card">
                 <img src="src/sistema2.png" alt="Símbolo de representação de exemplos de uso">
                 <p class="info-card-title">EXEMPLO DE USO</p>
-                <div class="info-card-sistema">
+                <div class="info-card-sistema yellow-card">
                     <p>No exemplo acima, as linhas resultam em 15 (5 x 3), e os círculos somados totalizam 3.</p>
                     <p>Em seguida, somamos os dois resultados: 3 + 15 = 18, obtendo assim o resultado final.</p>
                 </div>
@@ -158,7 +235,7 @@
             <div class="intro-sistema-card">
                 <img src="src/sistema3.png" alt="Ilustração de outros símbolos">
                 <p class="info-card-title">OUTROS SÍMBOLOS</p>
-                <div class="info-card-sistema">
+                <div class="info-card-sistema yellow-card">
                     <p>Na escrita guarani, há uma variedade de símbolos com significados e histórias distintas!</p>
                     <p>Clique abaixo para saber mais!</p>
                     <input type="submit" class="sistema-info-btn" value="Mais Detalhes">
@@ -166,48 +243,45 @@
             </div>
         </div>
     </section>
-    <section class="intro-video-section img-background">
-        <h1 class="landing-video-title">Vídeo Introdutório</h1>
-        <img id="em-construcao-card" src="src/em-construcao-card.png" alt="Card com os escritos: 'em construção'">
-        <img src="src/video-buttons.png" alt="Players do video" class="players">
-    </section>
-    <section class="intro-sistema-section img-background hand-section">
+
+    <div class="div-line">
+
+        <section class="intro-video-section img-background patch-background">
+            <h1 class="landing-video-title">Assista o vídeo abaixo:</h1>
+            <video width="auto" height="500" controls class="landing-video">
+                <source src="src/videos/introducao.mp4" type="video/mp4">
+                Seu navegador não suporta essa formato de vídeo.
+            </video>
+        </section>
+    
+    <div class="div-line">
+    
+    <section class="hand-section img-background leaves2-background">
         <div class="wood-title bg-wood">
             <h1>Contando com as mãos</h1>
         </div>
-        <div class="info-card-sistema" id="hand-card">
+        <div class="yellow-card" id="hand-card">
             <p>Os Guarani têm uma preferência por <b>contar em grupos de cinco elementos</b>, evitando formar pares dentro de um conjunto de seis elementos para manter essa preferência. Essa prática é influenciada pela forma como percebem o mundo ao seu redor, onde muitos elementos são concebidos em pares, como sol e lua, homem e mulher, e as duas orelhas.</p>
             <p> A escolha pela base cinco na contagem reflete sua <b>cosmovisão e a maneira como interagem com o mundo</b>, enquanto a tendência por formar pares dentro desses grupos ressoa com sua concepção da dualidade presente na natureza e na organização social.<br></p>
             <p>Abaixo veja uma tabela mostrando como os Guarani percebem a <b>contagem de 1 a 10 usando as mãos:</b></p>
         </div>
         <img id="tabela-contagem-maos" src="src/tabela-contagem-mãos.png" alt="Tabela representativa do sistema de contagem manual">
     </section>
-    <section class="intro-sistema-section img-background">
+
+    <div class="div-line">
+    
+    <section class="feedback-page img-background leaves2-background">
         <div class="feedback">
-            <form action="#" class="feedback-form">
-            <h1>Feedback</h1>
-            <div class="feedback-container">
-                <div class="left-side feedback-inputs">
-                    <input class="feedback-text" type="text" placeholder="Nome">
-                    <input class="feedback-text" type="email" placeholder="Email">
-                    <textarea placeholder="Nos descreva como foi sua experiência no site"></textarea>
-                </div>
-                <div class="right-side">
-                    <p>Sua avaliação:</p>
-                    <div class="stars">
-                        <img src="src/star.png" alt="estrela">
-                        <img src="src/star.png" alt="estrela">
-                        <img src="src/star.png" alt="estrela">
-                        <img src="src/star.png" alt="estrela">
-                        <img src="src/star.png" alt="estrela">
-                    </div>
-                </div>
-            </div>
-            </form>
+            <form action="#" class="feedback-form-container">
+            <h1>Preencha o formulário</h1>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScwVHQcma3j-XpamLveqYNI7aVoZFwhzErpOC7Y9_Y9h17RLA/viewform?embedded=true" width="800" height="1176" frameborder="0" marginheight="0" marginwidth="0" class="feedback-form">Carregando…</iframe>
+        </form>
         </div>
-        <button onclick="topFunction()" id="voltar-topo-btn" title="Voltar ao topo">Voltar ao topo ▲</button>
+        <button onclick="topFunction()" class="green-btn voltar-topo-btn" title="Voltar ao topo">Voltar ao topo ▲</button>
     </section>
-    <footer class="landing-footer">
+
+    <!-- FOOTER -->
+    <footer class="scg-footer">
         <div class="footer-logo">
             <img src="src/nav-logo.png" alt="Logo do Sistema de Contagem Guarani">
         </div>

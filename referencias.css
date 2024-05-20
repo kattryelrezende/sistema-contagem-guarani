@@ -1,0 +1,59 @@
+.referencias-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-title-box {
+    padding: 2rem 4rem;
+    margin-bottom: 3rem;
+    width: 60rem;
+}
+
+.referencias-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    width: 80rem;
+}
+
+.img-ref {
+    width: 20rem;
+    max-height: 26rem;
+}
+
+.ref-title, .video-refs-title {
+    font-family: "Passero One";
+    color: var(--pure-white);
+    font-size: 1.8rem;
+    border-bottom: 4px solid var(--pure-white);
+    width: fit-content;
+}
+
+iframe {
+    border: none;
+}
+
+.video-refs {
+    margin-top: 3rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.videos-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    width: 100%;
+    gap: 5rem;
+}
+
+.vertical-align {
+    margin: 4rem 0;
+}
+

@@ -221,6 +221,11 @@ body::-webkit-scrollbar-thumb {
     margin-right: 0 !important;
 }
 
+.footer-link {
+    text-decoration: none;
+    color: var(--pure-white);
+}
+
 /* ----------------------------------------------------------------- */
 /* DIVISÕES */
 

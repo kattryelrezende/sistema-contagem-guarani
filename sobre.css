@@ -1,0 +1,56 @@
+.sobre-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-title-box {
+    padding: 2rem 4rem;
+    margin-bottom: 3rem;
+    width: 60rem;
+}
+
+.vertical-align {
+    margin: 4rem 0;
+}
+
+.devs-container {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    gap: 4rem;
+    margin: 3rem 0;
+}
+
+.dev-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 16rem;
+}
+
+.dev-info img {
+    aspect-ratio: 1;
+}
+
+.dev-info h3 {
+    font-family: "Poppins Bold";
+    color: var(--pure-white);
+    font-size: 1.4rem;
+}
+
+.dev-notes {
+    width: 76%;
+    font-size: 1.3rem;
+}
+
+.dev-notes h1 {
+    font-family: "Poppins Bold";
+    text-align: center;
+}
+
+.dev-notes p:last-child {
+    text-align: right;
+}

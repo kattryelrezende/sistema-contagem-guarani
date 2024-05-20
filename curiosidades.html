@@ -17,7 +17,7 @@
         <div class="nav-items">
             <ul>
                 <li class="nav-item"><a href="index.html">Página Inicial</a></li>
-                <li class="nav-item"><a href="#">Símbolos</a></li>
+                <li class="nav-item"><a href="simbolos.html">Símbolos</a></li>
                 <li class="nav-item"><a href="oralidade.html">Oralidade</a></li>
                 <li class="nav-item"><a href="#">Vídeos</a></li>
             </ul>
@@ -109,7 +109,7 @@
     <section class="curiosidades-video-page img-background patch-background">
         <h1 class="curiosidades-video-title">Saiba mais: Contando com as mãos?</h1>
         <video width="auto" height="500" controls class="curiosidades-video">
-            <source src="#" type="video/mp4">
+            <source src="src/videos/contando-com-maos.mp4" type="video/mp4">
             Seu navegador não suporta essa formato de vídeo.
         </video>
         <button onclick="topFunction()" class="green-btn voltar-topo-btn" title="Voltar ao topo">Voltar ao topo ▲</button>
@@ -131,6 +131,16 @@
             <img src="src/LOGO-ICMC-PEQUENA.png" alt="Logo ICMC">
         </div>
     </footer>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
     <script src="script.js"></script>
 </body>
 </html>

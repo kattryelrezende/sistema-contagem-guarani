@@ -1,0 +1,298 @@
+/* PRIMEIRA SECTION - MENU */
+.simbolos-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 130vh;
+    gap: 4rem;
+}
+
+.main-title-box {
+    padding: 2rem 4rem;
+    margin-bottom: 3rem;
+    width: 100%;
+}
+
+.menu-container {
+    width: 60rem !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* CAIXA DE SELEÇÃO DE CONTEÚDO */
+.form-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.info-control {
+    background-color: var(--moss-green);
+    cursor: pointer;
+    border: 6px solid var(--forest-green);
+    font-family: "Poppins Bold";
+    font-size: 1.7rem;
+    color: var(--pure-white);
+    transition: background-color 0.3s, color 0.3s;
+    width: 10rem; /* Defina uma largura fixa para todos */
+    height: 4rem;
+    padding: 5px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.info-control.active {
+    background-color: var(--forest-green);
+    color: var(--pure-white);
+}
+
+.info-control input[type="radio"] {
+    margin: 0;
+    appearance: none;
+}
+
+.guarani-info {
+    display: none;
+}
+
+.menu-row {
+    display: flex; /* Para garantir que os info-controls fiquem em linha */
+    flex-wrap: wrap; /* Se houver muitos info-controls, eles quebrarão para a próxima linha */
+    justify-content: center; /* Centraliza horizontalmente */
+}
+
+.info-container{
+    display: flex;
+    gap: 2rem;
+    min-height: 30rem;
+}
+
+.row-desc {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-content{
+    width: 16rem;
+    height: fill;
+    font-size: 1.4rem;
+}
+
+.menu-content-row{
+    margin-top: 4rem;
+    width: 60rem;
+    padding: 3rem 0;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+#index-desc{
+    width: 25rem !important;
+    height: fit-content;
+}
+
+.number-index {
+    font-family: "Passero One";
+    color: var(--yellow-golden);
+    font-size: 10rem;
+    text-align: center;
+    margin-top: 2rem;
+    text-shadow:
+    -5px -5px 0 var(--dirt-brown),
+     0   -5px 0 var(--dirt-brown),
+     5px -5px 0 var(--dirt-brown),
+     5px  0   0 var(--dirt-brown),
+     5px  5px 0 var(--dirt-brown),
+     0    5px 0 var(--dirt-brown),
+    -5px  5px 0 var(--dirt-brown),
+    -5px  0   0 var(--dirt-brown);
+}
+
+/* NÚMEROS */
+.numeros-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.num-row {
+    margin: 0;
+}
+
+.num-collection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.num-collection-row {
+    display: flex;
+    gap: 3rem;
+}
+
+.num-collection-title {
+    font-family: "Passero One";
+    color: var(--yellow-golden);
+    text-shadow:
+    -5px -5px 0 var(--dirt-brown),
+     0   -5px 0 var(--dirt-brown),
+     5px -5px 0 var(--dirt-brown),
+     5px  0   0 var(--dirt-brown),
+     5px  5px 0 var(--dirt-brown),
+     0    5px 0 var(--dirt-brown),
+    -5px  5px 0 var(--dirt-brown),
+    -5px  0   0 var(--dirt-brown);
+    font-size: 6rem;
+    margin: 0;
+    padding-top: 3rem;
+}
+
+.bg-wood {
+    width: 16rem;
+    height: 16rem;
+    aspect-ratio: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--pure-white);
+    padding: 2rem;
+    border: 10px solid var(--dirt-brown);
+    text-align: center;
+    font-family: "Poppins Light";
+    font-size: 1.5rem;
+    gap: 2rem;
+    border-radius: 20px;
+}
+
+.long-bg-wood {
+    width: 35rem;
+    height: 16rem;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--pure-white);
+    padding: 2rem;
+    border: 10px solid var(--dirt-brown);
+    text-align: center;
+    font-family: "Poppins Light";
+    font-size: 1.3rem;
+    gap: 2rem;
+    background-image: url(src/wood-texture.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+}
+
+.long-box {
+    height: 22rem;
+    padding: 2rem 0;
+}
+
+.longer-box {
+    height: 27rem;
+    padding: 2rem 0;
+}
+
+.longer-symbol-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25rem;
+    padding: 6rem 3rem 3rem 3rem;
+    gap: 3rem;
+    height: 35rem;
+}
+
+.longer-symbol-box img{
+    width: 10rem;
+    
+}
+
+.giant-box {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    height: 40rem;
+    width: 25rem;
+    padding: 2rem 3rem;
+}
+
+.giant-box img {
+    width: 7rem;
+}
+
+.inv-box {
+    width: 16rem;
+}
+
+.num-side {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 30rem;
+}
+
+.symbol-index {
+    font-family: "Passero One";
+    font-size: 3rem;
+    margin: 0;
+}
+
+.wood-div-line {
+    width: 99vw;
+    height: 2rem;
+    background-image: url(src/wood-texture.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 4rem;
+    border-top: 5px solid var(--dirt-brown);
+    border-bottom: 5px solid var(--dirt-brown);
+}
+
+.vertical-align {
+    margin: 2rem 0;
+}
+
+#reduceSize {
+    width: 10% !important;
+}
+
+#reduceSize2 {
+    width: 35% !important;
+}
+
+
+#align-96 {
+    gap: 0;
+    padding: 1rem;
+}
+
+.table-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+}
+
+.table-title {
+    font-family: "Glitter Candy";
+    font-size: 4rem;
+    color: var(--pure-white);
+    text-shadow:
+    -5px -5px 0 var(--dirt-brown),
+     0   -5px 0 var(--dirt-brown),
+     5px -5px 0 var(--dirt-brown),
+     5px  0   0 var(--dirt-brown),
+     5px  5px 0 var(--dirt-brown),
+     0    5px 0 var(--dirt-brown),
+    -5px  5px 0 var(--dirt-brown),
+    -5px  0   0 var(--dirt-brown);
+    margin: 0;
+}

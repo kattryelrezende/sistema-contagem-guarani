@@ -43,6 +43,10 @@
   box-sizing: border-box;
 }
 
+*, html {
+    scroll-behavior: smooth !important;
+}
+
 video::-webkit-media-controls-panel {
     background-image: linear-gradient(transparent, transparent) !important;
 }

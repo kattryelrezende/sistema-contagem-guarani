@@ -400,13 +400,16 @@ body::-webkit-scrollbar-thumb {
 .green-btn {
     background-color: var(--forest-green);
     color: var(--pure-white);
-    margin-top: 1.5rem;
+    margin: 1.5rem 0;
     padding: .7rem 2rem;
     border-radius: 50px;
     font-family: "Poppins Bold";
     font-size: 1.5rem;
+    width: fit-content;
     border: none;
     cursor: pointer;
+    align-self: center;
+    justify-self: center;
 }
 
 .white-btn {
@@ -531,7 +534,7 @@ body::-webkit-scrollbar-thumb {
         font-size: 1.8rem;
     }
 
-    .wood-btn, .green-btn, .white-btn {
+    .wood-btn{
         font-size: 1.2rem;
     }
 
@@ -553,7 +556,7 @@ body::-webkit-scrollbar-thumb {
         font-size: 1.5rem;
     }
 
-    .wood-btn, .green-btn, .white-btn {
+    .wood-btn {
         font-size: 1rem;
         padding: 0.5rem 1rem;
     }

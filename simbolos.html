@@ -272,7 +272,7 @@
             <!-- DESCRIÇÃO DE TABELA COMPLETA -->
             <div class="guarani-info" id="table">
                 <div class="info-container row-desc">
-                    <h1 class="number-index num-row">TABELA COMPLETA:</h1>
+                    <h1 class="number-index num-row table-title-index">TABELA COMPLETA:</h1>
                     <div class="yellow-card menu-content-row" style="width: 80rem; padding-left: 3rem; padding-right: 3rem;">
                         Nesta seção, apresentamos a tabela completa dos primeiros cem números do sistema de contagem Guarani. Cada número é mais do que uma simples representação quantitativa; é um símbolo carregado de significado, transmitindo a visão de mundo única e profunda dos Guarani.
                     </div>
@@ -321,7 +321,7 @@
                             </span>
                         </div>
                         <!-- 4 -->
-                        <div class="long-bg-wood num-symbol">
+                        <div class="long-bg-wood num-symbol vertical-box">
                             <div class="num-side">
                                 <h2 class="symbol-index">4</h2>
                                 <span>
@@ -343,7 +343,7 @@
                     <!-- 5 - 6 -->
                     <div class="num-collection-row">
                         <!-- 5 -->
-                        <div class="long-bg-wood num-symbol">
+                        <div class="long-bg-wood num-symbol vertical-box">
                             <div class="num-side">
                                 <h2 class="symbol-index">5</h2>
                                 <span>
@@ -608,7 +608,7 @@
                     <!-- 30 - 31 -->
                     <div class="num-collection-row">
                         <!-- 30 -->
-                        <div class="long-bg-wood num-symbol longer-box">
+                        <div class="long-bg-wood num-symbol longer-box taller-box vertical-box-30">
                             <div class="num-side">
                                 <h2 class="symbol-index">30</h2>
                                 <span>
@@ -662,7 +662,7 @@
                     <!-- 35 - 36 -->
                     <div class="num-collection-row">
                         <!-- 35 -->
-                        <div class="long-bg-wood num-symbol longer-box">
+                        <div class="long-bg-wood num-symbol longer-box taller-box vertical-box-30">
                             <div class="num-side">
                                 <h2 class="symbol-index">35</h2>
                                 <span>
@@ -1479,11 +1479,11 @@
                         </div>
                     </div>
                     <div class="num-collection-row">
-                        <div class="bg-wood num-symbol longer-box">
+                        <div class="bg-wood num-symbol longer-symbol-box">
                             <div class="num-side">
                                 <h2 class="symbol-index">94</h2>
                                 <span>
-                                    <img src="src/numbers/94.png" alt="Número 94 em guarani" id="reduceSize2">
+                                    <img src="src/numbers/94.png" alt="Número 94 em guarani">
                                 </span>
                             </div>
                             <div class="desc-side">
@@ -1587,10 +1587,11 @@
 
         </section>
         <div class="guarani-info img-background patch-background" id="table">
+            <div class="div-line"></div>
             <section class="table-page " >
-                <div class="div-line"></div>
                 <h1 class="table-title">NÚMEROS DE 1 À 100</h1>
-                <img src="src/numbers/tabela.png" alt="Tabela com todos os 100 números em guarani">
+                <img class="full-table desktop-table" src="src/numbers/Tabela-10x10.png" alt="Tabela com todos os 100 números em guarani">
+                <img class="full-table mobile-table" src="src/numbers/tabelaFull.png" alt="Tabela com todos os 100 números em guarani">
                 <button onclick="topFunction()" class="white-btn voltar-topo-btn vertical-align" title="Voltar ao topo">Voltar ao topo ▲</button>
             </section>
         </div>
@@ -1622,5 +1623,16 @@
     </script>
     <script src="simbolos.js"></script>
     <script src="script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const navToggle = document.querySelector('.nav-toggle');
+            const navItems = document.querySelector('.nav-items');
+        
+            navToggle.addEventListener('click', function() {
+                navToggle.classList.toggle('active');
+                navItems.classList.toggle('active');
+            });
+        });
+    </script>
 </body>
 </html>

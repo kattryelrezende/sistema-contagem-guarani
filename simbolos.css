@@ -3,21 +3,50 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 130vh;
+    height: 100%;
     gap: 4rem;
 }
 
 .main-title-box {
     padding: 2rem 4rem;
-    margin-bottom: 3rem;
-    width: 100%;
+    margin: 1.4rem;
+    width: 80%;
 }
 
+/* Estilos padrão para o menu */
 .menu-container {
-    width: 60rem !important;
+    width: 100%;
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.menu-items {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: fit-content;
+}
+
+.menu-item {
+    margin-right: 1rem;
+    width: 20rem;
+}
+
+.menu-link {
+    text-decoration: none;
+    color: var(--pure-white);
+    font-family: "Poppins Bold";
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.menu-link:hover {
+    background-color: var(--lime-green);
 }
 
 /* CAIXA DE SELEÇÃO DE CONTEÚDO */
@@ -67,6 +96,7 @@
     display: flex;
     gap: 2rem;
     min-height: 30rem;
+    margin-bottom: 4rem;
 }
 
 .row-desc {
@@ -82,10 +112,12 @@
 
 .menu-content-row{
     margin-top: 4rem;
-    width: 60rem;
+    width: 80% !important;
     padding: 3rem 2rem;
     font-size: 1.4rem;
     text-align: center;
+    justify-self: center;
+    align-self: center;
 }
 
 #index-desc{
@@ -119,6 +151,16 @@
 
 .num-row {
     margin: 0;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.table-title-index {
+    width: 70%;
+    align-self: center;
 }
 
 .num-collection {
@@ -219,7 +261,7 @@
     display: flex;
     flex-direction: column;
     gap: 3rem;
-    height: 40rem;
+    height: 100%;
     width: 25rem;
     padding: 2rem 3rem;
 }
@@ -234,15 +276,19 @@
 
 .num-side {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     gap: 2rem;
-    width: 30rem;
+    width: 70%;
 }
 
 .symbol-index {
     font-family: "Passero One";
     font-size: 3rem;
     margin: 0;
+    width: 2rem;
+    text-align: center;
 }
 
 .wood-div-line {
@@ -261,12 +307,9 @@
 }
 
 #reduceSize {
-    width: 10% !important;
+    width: 80% !important;
 }
 
-#reduceSize2 {
-    width: 35% !important;
-}
 
 
 #align-96 {
@@ -294,6 +337,245 @@
      0    5px 0 var(--dirt-brown),
     -5px  5px 0 var(--dirt-brown),
     -5px  0   0 var(--dirt-brown);
-    margin: 0;
+    margin: 8rem 0 4rem 0;
+    text-align: center;
+    padding: 0 2rem;
 }
 
+.full-table {
+    width: 80%;
+}
+
+.mobile-table {
+    display: none;
+}
+ 
+/* Estilos padrão para telas maiores */
+.simbolos-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+}
+
+.menu-container {
+    width: 60rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info-control {
+    width: 10rem;
+    height: 4rem;
+    padding: 5px;
+}
+
+.menu-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menu-content {
+    width: 16rem;
+    font-size: 1.4rem;
+}
+
+.long-bg-wood {
+    width: 35rem;
+    height: 16rem;
+}
+
+.longer-symbol-box {
+    width: 25rem;
+    height: 35rem;
+}
+
+.giant-box {
+    height: 40rem;
+    width: 25rem;
+}
+
+.num-collection-title {
+    font-size: 6rem;
+}
+
+.taller-box {
+    height: 27rem;
+}
+
+/* Media Queries para ajuste responsivo */
+
+@media only screen and (max-width: 1200px) {
+    .menu-container {
+        width: 50rem;
+    }
+    .info-control {
+        width: 8rem;
+    }
+    .menu-content {
+        width: 14rem;
+    }
+    .long-bg-wood {
+        width: 36rem;
+    }
+    .longer-symbol-box {
+        width: 20rem;
+    }
+    .giant-box {
+        width: 25rem;
+    }
+
+    .num-collection {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .num-collection-title {
+        font-size: 5rem;
+    }
+
+    .inv-box {
+        display: none;
+    }
+}
+
+@media (max-width: 1000px) {
+    .full-table {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .menu-container {
+        width: 80%;
+    }
+
+    .info-control {
+        width: 8.5rem;
+    }
+    .menu-content {
+        width: 80%;
+    }
+
+    .longer-symbol-box {
+        width: 18rem;
+    }
+    .giant-box {
+        width: 18rem;
+        height: 50rem;
+    }
+    .num-collection-title {
+        font-size: 4rem;
+    }
+
+    .info-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+
+    .number-index {
+        margin-bottom: 0;
+    }
+
+    .table-title-index {
+        font-size: 8rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .num-collection-row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    } 
+
+    .longer-symbol-box, .giant-box {
+        width: 100%;
+        max-width: 25rem;
+    }
+
+    .vertical-box-30 {
+        display: flex;
+        flex-direction: column;
+        width: 16rem;
+        height: 50rem;
+    }
+
+}
+
+@media (max-width: 875px){
+    .desktop-table {
+        display: none;
+    }
+
+    .mobile-table {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .num-collection-title {
+        font-size: 3.5rem;
+    }
+
+    .vertical-box {
+        display: flex;
+        flex-direction: column;
+        width: 16rem;
+        height: 40rem;
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    .menu-container {
+        width: 100%;
+    }
+    .info-control {
+        width: 100%;
+        max-width: 10rem;
+    }
+
+    .giant-box {
+        width: 18rem;
+        height: 60rem;
+    }
+
+    .longer-symbol-box {
+        width: 18rem;
+    }
+
+    .num-collection-row {
+        width: 100vw;
+    }
+
+    .num-collection-title {
+        font-size: 3rem;
+    }
+
+    #index-desc {
+        width: 80% !important;
+    }
+
+    .table-title-index {
+        font-size: 6rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .number-index {
+        font-size: 6rem;
+    }
+
+    .table-title-index {
+        font-size: 4rem;
+    }
+}

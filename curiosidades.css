@@ -234,6 +234,21 @@
     }
 }
 
+@media (max-width: 800px){
+    .objetos-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .objetos-info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 @media (max-width: 480px) {
     .wood-box, .wood-text, .yellow-card {
         padding: 0.5rem;

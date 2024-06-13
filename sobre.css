@@ -1,38 +1,32 @@
+/* Ajuste para a seção principal */
 .sobre-page {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.main-title-box {
-    padding: 2rem 4rem;
-    margin-bottom: 3rem;
-    width: 60rem;
-}
-
-.vertical-align {
-    margin: 4rem 0;
-}
-
-.devs-container {
-    width: 80%;
-    display: flex;
-    justify-content: space-around;
-    gap: 4rem;
-    margin: 3rem 0;
-}
-
-.dev-info {
+    padding: 2rem; /* Espaçamento interno geral */
+    text-align: center; /* Centraliza o conteúdo */
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 16rem;
 }
 
-.dev-info img {
-    aspect-ratio: 1;
+/* Ajuste para o título principal */
+.main-title-box {
+    padding: 1rem;
+    margin-bottom: 2rem;
+    width: 80%;
+}
+
+/* Ajuste para o container dos desenvolvedores */
+.devs-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens se ajustem em várias linhas */
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.dev-info {
+    width: calc(33.33% - 1rem); /* Ajusta para 1 coluna em telas pequenas */
+    margin-bottom: 2rem;
+    text-align: center;
 }
 
 .dev-info h3 {
@@ -40,17 +34,49 @@
     color: var(--pure-white);
     font-size: 1.4rem;
 }
-
+/* Ajuste para as notas dos autores */
 .dev-notes {
-    width: 76%;
-    font-size: 1.3rem;
+    width: 100%;
+    line-height: 1.6; /* Espaçamento entre linhas */
+    padding: 1rem;
 }
 
-.dev-notes h1 {
-    font-family: "Poppins Bold";
-    text-align: center;
+/* Ajuste para o botão "Voltar ao topo" */
+.green-btn {
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    font-size: 1rem; /* Tamanho do texto do botão */
+    width: 15rem;
+    justify-self: center;
+    align-self: center;
 }
 
-.dev-notes p:last-child {
-    text-align: right;
+/* Ajuste para imagens dos desenvolvedores */
+.dev-info img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Media Queries para telas menores */
+@media (max-width: 1024px) {
+    .dev-info {
+        width: calc(50% - 1rem); /* Ajusta para 2 colunas em telas médias */
+    }
+}
+
+@media (max-width: 768px) {
+    .dev-info {
+        width: calc(100% - 1rem); /* Ajusta para 1 coluna em telas pequenas */
+    }
+}
+
+@media (max-width: 480px) {
+    .main-title-box {
+        font-size: 1.5rem; /* Ajusta o tamanho do título para telas muito pequenas */
+    }
+
+    .devs-container {
+        gap: 1rem;
+    }
+
 }

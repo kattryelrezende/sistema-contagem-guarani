@@ -3,16 +3,19 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 130vh;
+    height: 140h;
 }
 
 .main-title-box {
     padding: 2rem 4rem;
     margin-bottom: 3rem;
+    width: 80%;
 }
 
 .oralidade-container {
-    width: 60rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #intro-card {
@@ -21,9 +24,11 @@
 
 .oralidade-card-content {
     font-size: 1.3rem;
-    width: 60rem;
+    width: 70%;
+    max-width: 65rem;
     padding-left: 4rem;
     padding-right: 4rem;
+    margin: 2rem 0;
 }
 
 .oralidade-title {
@@ -50,7 +55,7 @@
 }
 .literal-info-card {
     margin: 3rem 0;
-    width: 60rem;
+    width: 70%;
 }
 
 .literal-info-card:last-child {
@@ -59,4 +64,63 @@
 
 .literal-info-card p {
     font-size: 1.3rem;
+}
+
+
+/* Responsiveness */
+@media (max-width: 1024px) {
+    .leaf-title {
+        font-size: 2.5rem;
+    }
+
+    .table-1 img, .table-2 img {
+        width: 40rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .oralidade-card-content {
+        font-size: 1.2rem;
+    }
+
+    .literal-info-card {
+        font-size: 1.2rem;
+    }
+
+    .voltar-topo-btn {
+        font-size: 1rem;
+        padding: 0.8rem 1.5rem;
+    }
+
+    .table-1 img, .table-2 img {
+        width: 30rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .leaf-title {
+        font-size: 1.8rem;
+    }
+
+    .oralidade-card-content {
+        font-size: 1rem;
+    }
+
+    .literal-info-card {
+        font-size: 1rem;
+    }
+
+    .table-1, .table-2 {
+        margin-top: 1rem;
+    }
+
+    .voltar-topo-btn {
+        font-size: 0.8rem;
+        padding: 0.6rem 1rem;
+    }
+
+    .table-1 img, .table-2 img {
+        width: 20rem;
+    }
 }

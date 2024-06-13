@@ -14,7 +14,12 @@
         <a href="index.html" class="nav-logo">
             <img src="src/nav-logo.png" alt="Logo do Sistema de Contagem Guarani">
         </a>
-        <div class="nav-items">
+        <div class="nav-toggle" id="nav-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <div class="nav-items" id="nav-items">
             <ul>
                 <li class="nav-item"><a href="curiosidades.html">Curiosidades</a></li>
                 <li class="nav-item"><a href="simbolos.html">Símbolos</a></li>
@@ -22,7 +27,8 @@
                 <li class="nav-item"><a href="sobre.html">Sobre</a></li>
             </ul>
         </div>
-    </nav>
+    </nav>   
+    
 
     <!-- HERO-SECTION -->
     <section class="landing-page img-background">
@@ -34,7 +40,7 @@
     
                 <!-- CAIXA COM DESCRIÇÃO -->
                 <div class="wood-box bg-wood">
-                    <p>Entenda como o as raízes do povo guarani<br> tiveram influência na história da computação</p>
+                    <p class="wood-box-text">Entenda como o as raízes do povo guarani tiveram influência na história da computação</p>
                 </div>
     
                 <!-- BOTÃO DE MADEIRA -->
@@ -101,6 +107,7 @@
                 <img src="src/LOGO-ICMC.png" alt="Logo do ICMC">
                 <img id="logo-usp" src="src/logo-usp.png" alt="Logo da USP">
             </div>
+        </div>
     </section>
 
     <div class="div-line">
@@ -248,10 +255,7 @@
 
         <section class="intro-video-section img-background patch-background">
             <h1 class="landing-video-title">Assista o vídeo abaixo:</h1>
-            <video width="auto" height="500" controls class="landing-video">
-                <source src="src/videos/introducao.mp4" type="video/mp4">
-                Seu navegador não suporta essa formato de vídeo.
-            </video>
+            <iframe class="landing-video" src="https://www.youtube.com/embed/MvDFFS9h6Ts?si=uTnURiXMK2s1KpNZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </section>
     
     <div class="div-line">
@@ -274,7 +278,7 @@
         <div class="feedback">
             <form action="#" class="feedback-form-container">
             <h1>Preencha o formulário</h1>
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScwVHQcma3j-XpamLveqYNI7aVoZFwhzErpOC7Y9_Y9h17RLA/viewform?embedded=true" width="800" height="1176" frameborder="0" marginheight="0" marginwidth="0" class="feedback-form">Carregando…</iframe>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScwVHQcma3j-XpamLveqYNI7aVoZFwhzErpOC7Y9_Y9h17RLA/viewform?embedded=true" width="80%" height="1176" frameborder="0" marginheight="0" marginwidth="0" class="feedback-form">Carregando…</iframe>
         </form>
         </div>
         <button onclick="topFunction()" class="green-btn voltar-topo-btn" title="Voltar ao topo">Voltar ao topo ▲</button>
@@ -286,10 +290,9 @@
             <img src="src/nav-logo.png" alt="Logo do Sistema de Contagem Guarani">
         </div>
         <ul class="footer-items">
+            <a href="index.html" class="footer-link"><li>Início</li></a>
             <a href="referencias.html" class="footer-link"><li>Fontes</li></a>
-            <li>Institucional</li>
-            <li>Contato</li>
-            <li>Vídeos</li>
+            <a href="sobre.html" class="footer-link"><li>Sobre</li></a>
         </ul>
         <div class="footer-college-logos">
             <img src="src/logo-usp-pequena.png" alt="Logo USP">
@@ -307,5 +310,16 @@
         new window.VLibras.Widget('https://vlibras.gov.br/app');
     </script>
     <script src="script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const navToggle = document.querySelector('.nav-toggle');
+            const navItems = document.querySelector('.nav-items');
+        
+            navToggle.addEventListener('click', function() {
+                navToggle.classList.toggle('active');
+                navItems.classList.toggle('active');
+            });
+        });
+    </script>
 </body>
 </html>

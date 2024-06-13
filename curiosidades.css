@@ -1,9 +1,10 @@
-/* PRIMEIRA SECTION - INTRODUÇÃO ÀS CURIOSIDADES */
+/* SECTION: INTRODUÇÃO ÀS CURIOSIDADES */
 .curiosidades-page {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 95vh;
+    height: auto;
+    padding: 2rem 1rem;
 }
 
 .main-title-box {
@@ -13,6 +14,8 @@
 
 .curiosidades-container {
     width: 60rem;
+    max-width: 100%;
+    padding: 0 1rem;
 }
 
 #intro-card {
@@ -21,25 +24,17 @@
 
 .curiosidade-card-content {
     font-size: 1.3rem;
-    width: 60rem;
+    width: 85%;
 }
 
 .curiosidade-title {
     font-family: "Poppins Bold";
     font-size: 2rem;
     color: var(--pure-white);
-    text-shadow:
-    -3px -3px 0 var(--dirt-brown),
-     0   -3px 0 var(--dirt-brown),
-     3px -3px 0 var(--dirt-brown),
-     3px  0   0 var(--dirt-brown),
-     3px  3px 0 var(--dirt-brown),
-     0    3px 0 var(--dirt-brown),
-    -3px  3px 0 var(--dirt-brown),
-    -3px  0   0 var(--dirt-brown);
+    text-shadow: -3px -3px 0 var(--dirt-brown), 0 -3px 0 var(--dirt-brown), 3px -3px 0 var(--dirt-brown), 3px 0 0 var(--dirt-brown), 3px 3px 0 var(--dirt-brown), 0 3px 0 var(--dirt-brown), -3px 3px 0 var(--dirt-brown), -3px 0 0 var(--dirt-brown);
 }
 
-/* SEGUNDA SECTION - CURIOSIDADES MAIN */
+/* SECTION: CURIOSIDADES MAIN */
 .curiosidades-page {
     display: flex;
     flex-direction: column;
@@ -57,18 +52,19 @@
     display: flex;
     justify-content: center;
     align-self: center;
-    gap: 3rem;
-    margin-top: -5rem;
+    gap: 2rem;
+    margin-top: 2rem;
 }
 
 .objetos-info {
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 2rem;
 }
 
 .objeto-pic {
-    width: 28.5rem;
+    width: 100%;
+    max-width: 28.5rem;
 }
 
 .objeto-pic img {
@@ -77,21 +73,22 @@
 
 .objeto-text {
     font-size: 1.3rem;
-    height: 41rem;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
 }
 
-.simbologia-card{
+.simbologia-card {
     align-self: center;
     display: flex;
-    gap: 3rem;
-    margin-bottom: 4rem;
+    gap: 2rem;
+    margin-bottom: 2rem;
     justify-content: center;
     align-items: center;
 }
 
 .curiosidade-card-text {
-    width: 85rem;
+    width: 100%;
+    max-width: 85rem;
+    padding: 0 1rem;
 }
 
 .simbolos-container {
@@ -107,7 +104,8 @@
 }
 
 .simbologia-pic {
-    width: 15rem;
+    width: 100%;
+    max-width: 15rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -123,25 +121,28 @@
     align-self: center;
     flex-direction: column;
     text-align: center;
-    padding: 0 3rem 2.5rem 3rem;
-    margin-bottom: 6rem;
+    padding: 0 1rem 2.5rem 1rem;
+    margin-bottom: 4rem;
 }
 
 .oral-card .a-container {
     align-self: center;
 }
 
-/* TERCEIRA SECTION - VIDEO */
+/* SECTION: VIDEO */
 .curiosidades-video-page {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
+    padding: 2rem 1rem;
 }
 
 .curiosidades-video {
     outline: 14px solid var(--forest-green);
-    margin-bottom: 2rem;
+    margin: 2rem 0;
+    width: 70%;
+    height: 40rem;
+    max-width: 100%;
 }
 
 .curiosidades-video-title {
@@ -149,14 +150,109 @@
     color: var(--pure-white);
     font-size: 2.8rem;
     letter-spacing: 3px;
-    text-shadow:
-    -2.5px -2.5px 0 var(--dirt-brown),
-     0   -2.5px 0 var(--dirt-brown),
-     2.5px -2.5px 0 var(--dirt-brown),
-     2.5px  0   0 var(--dirt-brown),
-     2.5px  2.5px 0 var(--dirt-brown),
-     0    2.5px 0 var(--dirt-brown),
-    -2.5px  2.5px 0 var(--dirt-brown),
-    -2.5px  0   0 var(--dirt-brown);
-    margin-top: 5rem !important;
+    text-shadow: -2.5px -2.5px 0 var(--dirt-brown), 0 -2.5px 0 var(--dirt-brown), 2.5px -2.5px 0 var(--dirt-brown), 2.5px 0 0 var(--dirt-brown), 2.5px 2.5px 0 var(--dirt-brown), 0 2.5px 0 var(--dirt-brown), -2.5px 2.5px 0 var(--dirt-brown), -2.5px 0 0 var(--dirt-brown);
+    text-align: center;
+    margin-top: 0;
+}
+
+/* BUTTONS */
+.green-btn {
+    background-color: var(--forest-green);
+    color: var(--pure-white);
+    margin-top: 1.5rem;
+    padding: .7rem 2rem;
+    border-radius: 50px;
+    font-family: "Poppins Bold";
+    font-size: 1.5rem;
+    border: none;
+    cursor: pointer;
+}
+
+.white-btn {
+    background-color: var(--pure-white);
+    color: var(--forest-green);
+    margin-top: 1.5rem;
+    padding: .7rem 2rem;
+    border-radius: 50px;
+    font-family: "Poppins Bold";
+    font-size: 1.5rem;
+    border: none;
+    cursor: pointer;
+}
+
+.a-container {
+    width: fit-content;
+    height: fit-content;
+}
+
+.a-container .green-btn:hover {
+    transition: 300ms ease-out;
+    background-color: var(--pure-white);
+    color: var(--forest-green);
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 1100px){
+    .simbologia-card {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1024px) {
+    .wood-box, .wood-text{
+        width: 100%;
+    }
+
+    .wood-title h1 {
+        font-size: 1.5rem;
+    }
+
+    .curiosidades-video-title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .wood-box, .wood-text, .yellow-card {
+        padding: 1rem;
+    }
+
+    .wood-box p {
+        font-size: 1rem;
+    }
+
+    .curiosidades-video-title {
+        font-size: 1.8rem;
+    }
+
+    .wood-btn, .green-btn, .white-btn {
+        font-size: 1.2rem;
+    }
+
+    .oral-card, .simbologia-card {
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .wood-box, .wood-text, .yellow-card {
+        padding: 0.5rem;
+    }
+
+    .wood-box p {
+        font-size: 0.9rem;
+    }
+
+    .curiosidades-video-title {
+        font-size: 1.5rem;
+    }
+
+    .wood-btn, .green-btn, .white-btn {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .oral-card, .simbologia-card {
+        padding: 0;
+    }
 }

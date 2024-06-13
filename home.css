@@ -5,21 +5,23 @@
     display: flex;
     flex-direction: column;
     padding-bottom: 2rem;
-    height: 100vh;
+    height: 100%;
 }
 
-/* CUSTOMIZAÇÃO DA PARTE SUPERIOR DA LANDING */
 .landing-main {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 4rem 0;
     gap: 3rem;
+    flex-wrap: wrap;
 }
 
-/* CUSTOMIZAÇÃO DO LEFT SIDE DA HERO SECTION */
-/* TÍTULO DA LANDING */
-yellow-highlight {
+.wood-box-text {
+    max-width: 35rem;
+}
+
+.yellow-highlight {
     color: var(--yellow-golden) !important;
 }
 
@@ -39,14 +41,12 @@ yellow-highlight {
     letter-spacing: 2px;
 }
 
-/* CUSTOMIZAÇÃO DO RIGHT SIDE DA HERO SECTION */
 .right-side {
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
 
-/* CUSTOMIZAÇÃO DO CARROSSEL */
 .caroussel-container {
     position: relative;
     width: 24rem;
@@ -58,27 +58,18 @@ yellow-highlight {
     width: 24rem;
     height: 30.625rem;
     display: none;
-    opacity: 0; /* Define a opacidade inicial */
-    animation: fadeInOut 0.3s ease-in forwards; /* Adiciona a animação */
+    opacity: 0;
+    animation: fadeInOut 0.3s ease-in forwards;
 }
 
 .caroussel-item.active {
-    display: flex; /* Altera o display para flex quando ativo */
-    opacity: 1; /* Altera a opacidade para 1 quando ativo */
+    display: flex;
+    opacity: 1;
 }
 
 .caroussel-item img {
     width: 100%;
     display: block;
-}
-
-.caroussel-item.active {
-    opacity: 1;
-}
-
-.caroussel-item.first-active {
-    opacity: 1 !important;
-    transition: none; /* Sem transição para a primeira imagem */
 }
 
 .overlay {
@@ -92,10 +83,9 @@ yellow-highlight {
     color: white;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
     opacity: 0;
-    transition: opacity 0.3s ease; /* Adiciona transição suave */
+    transition: opacity 0.3s ease;
 }
 
 .card-caroussel-title {
@@ -115,7 +105,7 @@ yellow-highlight {
     font-size: 1.3rem;
 }
 
-.card-caroussel-btn{
+.card-caroussel-btn {
     text-decoration: none;
     color: var(--pure-white);
     padding: 1rem 3rem;
@@ -142,7 +132,6 @@ yellow-highlight {
     cursor: pointer;
 }
 
-/* BOTÕES DO CARROSSEL */
 .caroussel-controller {
     display: flex;
     justify-content: center;
@@ -152,7 +141,7 @@ yellow-highlight {
     margin-top: 1rem;
     background-color: var(--pure-white);
     width: 7rem;
-    z-index: 1; /* Certifique-se de que os controladores estejam acima das imagens */
+    z-index: 1;
     position: relative;
 }
 
@@ -177,36 +166,40 @@ yellow-highlight {
     background-color: var(--lime-green) !important;
 }
 
-/* FOOTER DA LANDING */
-.hero-footer{
+.hero-footer {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 3rem;
-
+    flex-wrap: wrap; /* Permite que os itens quebrem para uma nova linha */
+    padding: 4rem 2rem; /* Ajuste o preenchimento conforme necessário */
+    margin-top: -6rem; /* Empurra o "hero footer" para o final da página */
 }
 
 .credits {
     font-family: "Poppins Light";
     color: var(--pure-white);
     font-size: 1.3rem;
+    text-align: center; /* Centraliza o texto para evitar quebras */
 }
 
 .college-logo {
     display: flex;
-    gap: 2rem;    
+    flex-wrap: wrap; /* Permite que os logos quebrem para uma nova linha */
+    gap: 2rem;
 }
 
 #logo-usp {
-    height: 90%;
+    height: 90px; /* Ajuste a altura conforme necessário */
 }
 
-/* SEGUNDA SECTION - QUEM SÃO OS GUARANI? */
-.intro-guarani-page{
+
+.intro-guarani-page {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 135vh;
+    height: auto;
+    padding: 2rem;
 }
 
 .guarani-pictures {
@@ -216,7 +209,8 @@ yellow-highlight {
 }
 
 .intro-guarani-pic {
-    width: 25rem;
+    width: 100%;
+    max-width: 25rem;
     font-family: "Poppins Light";
     text-align: right;
     color: var(--pure-white);
@@ -228,20 +222,20 @@ yellow-highlight {
     width: 100%;
 }
 
-/* TERCEIRA SECTION - SESSÃO INFORMATIVA */
 .guarani-info-page {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 124vh;
+    height: auto;
+    padding: 2rem;
 }
 
-/* CAIXA DE SELEÇÃO DE CONTEÚDO */
 .form-info {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 2rem;
+    flex-wrap: wrap;
 }
 
 .info-control {
@@ -278,25 +272,26 @@ yellow-highlight {
     margin: 0;
 }
 
-/* INFORMAÇÕES */
 .guarani-info {
-    width: 80%;
+    width: 100%;
+    max-width: 80%;
     display: none;
     margin-top: 2rem;
     justify-content: center;
     padding-top: 2rem;
     gap: 3rem;
+    flex-wrap: wrap;
 }
 
 .guarani-info.active {
     display: flex;
 }
 
-/* TEXTO DA SECTION DE INFORMAÇÃO */
 .guarani-info-text {
     display: flex;
     flex-direction: column;
-    width: 40rem;
+    width: 100%;
+    max-width: 40rem;
     color: var(--pure-white);
 }
 
@@ -311,8 +306,8 @@ yellow-highlight {
     font-size: 1.5rem;
 }
 
-/* IMAGEM DA SECTION DE INFORMAÇÃO */
 .guarani-info-picture {
+    width: 100%;
     max-width: 28rem;
 }
 
@@ -327,30 +322,30 @@ yellow-highlight {
     text-align: center;
 }
 
-/* QUARTA SECTION - INTRODUÇÃO AO SISTEMA */
 .intro-sistema-section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 110vh;
+    height: auto;
+    padding: 2rem;
 }
 
-/* CONTAINER DOS CARDS */
 .intro-sistema-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 5rem;
     gap: 3rem;
+    flex-wrap: wrap;
 }
 
-/* CARDS DE INFORMAÇÃO */
 .intro-sistema-card {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 20rem;
+    width: 100%;
+    max-width: 20rem;
 }
 
 .info-card-title {
@@ -370,11 +365,15 @@ yellow-highlight {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 110vh;
+    height: auto;
+    padding: 2rem;
 }
 
 .landing-video {
-    outline: 14px solid var(--forest-green);
+    outline: 7px solid var(--forest-green);
+    width: 80%;
+    height: 40rem;
+    margin: .75rem 1.5rem 1.5rem 1.5rem;
 }
 
 .landing-video-title {
@@ -391,47 +390,44 @@ yellow-highlight {
      0    2.5px 0 var(--dirt-brown),
     -2.5px  2.5px 0 var(--dirt-brown),
     -2.5px  0   0 var(--dirt-brown);
-    margin-top: 5rem !important;
+    text-align: center;
 }
 
-/* SEXTA SECTION - CONTANDO COM AS MÃOS */
 .hand-section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 105vh;
+    height: auto;
+    padding: 2rem;
 }
 
 #hand-card {
     font-size: 1.5rem;
     margin-top: 3rem;
-    width: 72rem;
+    width: 100%;
+    max-width: 72rem;
     height: fit-content;
     font-size: 1.3rem;
 }
 
 #tabela-contagem-maos {
-    margin-top: 3rem;
+    margin: 3rem 0;
+    width: 80%;
 }
 
-/* SÉTIMA SECTION - FEEDBACK */
 .feedback-page {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 105vh;
-}
-
-/* FORMS DE FEEDBACK */
-.feedback-container {
-    display: flex;
-    justify-content: space-between;
+    height: auto;
+    padding: 2rem;
 }
 
 .feedback-form-container {
     background-color: var(--pure-white);
-    width: 70rem;
-    height: 40rem;
+    width: 100%;
+    max-width: 100rem;
+    height: auto;
     margin-top: 4rem;
     padding: 1rem 4rem;
     border-radius: 50px;
@@ -449,7 +445,242 @@ yellow-highlight {
     justify-self: center;
 }
 
-/* BOTÃO VOLTAR AO TOPO */
 .voltar-topo-btn {
     margin-top: 5rem;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1200px) {
+    .landing-main {
+        gap: 2rem;
+    }
+
+    .caroussel-container {
+        width: 20rem;
+    }
+
+    .caroussel-item {
+        width: 20rem;
+    }
+
+    .caroussel-item img {
+        width: 100%;
+    }
+
+    .caroussel-controller {
+        width: 6rem;
+    }
+
+    .feedback-form-container {
+        padding: 1rem 2rem;
+    }
+
+    .landing-title {
+        font-size: 2.4rem;
+    }
+
+    .guarani-info-text h2 {
+        text-align: center;
+    }
+
+    .guarani-info-text p {
+        text-align: center;
+    }
+
+    .intro-sistema-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .feedback-form-container {
+        padding: 1rem 2rem;
+    }
+
+    .feedback-form-container h1 {
+        font-size: 2.8rem;
+    }
+}
+
+@media (max-width: 1000px){
+    #tabela-contagem-maos {
+        display: none;
+    }
+
+    .left-side {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #landing-btn {
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .landing-main {
+        padding: 2rem 0;
+        gap: 1rem;
+        flex-direction: column;
+    }
+
+    .wood-text {
+        width: 90%;
+        margin: 0 auto;
+        font-size: 1rem;
+    }
+
+    .guarani-pictures {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .intro-guarani-pic {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .intro-guarani-pic img {
+        width: 100%;
+        height: auto;
+    }
+
+    .intro-guarani-pic p {
+        text-align: center;
+        font-size: 0.9rem;
+    }
+
+    .caroussel-container {
+        width: 100%;
+    }
+
+    .caroussel-item {
+        width: 100%;
+    }
+
+    .landing-title {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .card-caroussel-p {
+        font-size: 1.1rem;
+    }
+
+    .card-caroussel-btn {
+        font-size: 1.3rem;
+    }
+
+    .feedback-form-container {
+        padding: 1rem;
+    }
+
+    .feedback-form-container h1 {
+        font-size: 2.4rem;
+        text-align: center;
+    }
+
+    .landing-video-title {
+        font-size: 2.2rem;
+    }
+
+    .wood-box p {
+        font-size: 1rem;
+    }
+
+    .info-control {
+        padding: 1rem;
+        font-size: 1.2rem;
+    }
+
+    .guarani-info-text h2 {
+        text-align: center;
+        font-size: 1.8rem;
+    }
+
+    .guarani-info-text p {
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    .info-card-title {
+        font-size: 1.5rem;
+    }
+
+    .intro-sistema-card {
+        width: 100%;
+    }
+
+    .intro-sistema-container {
+        justify-content: center;
+    }
+
+    .hero-footer {
+        flex-direction: column; /* Altera a direção para coluna em telas menores */
+        text-align: center; /* Centraliza o conteúdo quando em coluna */
+    }
+
+    .college-logo {
+        flex-direction: column; /* Organiza os logos em coluna */
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .landing-title {
+        font-size: 1.8rem;
+    }
+
+    .card-caroussel-p {
+        font-size: 1rem;
+    }
+
+    .card-caroussel-btn {
+        font-size: 1.2rem;
+        padding: 0.8rem 2rem;
+    }
+
+    .caroussel-controller {
+        width: 5rem;
+    }
+
+    .guarani-info-text h2 {
+        font-size: 1.6rem;
+    }
+
+    .guarani-info-text p {
+        font-size: 1rem;
+    }
+
+    .info-control {
+        padding: 0.8rem;
+        font-size: 1rem;
+    }
+
+    .info-card-title {
+        font-size: 1.2rem;
+    }
+
+    .landing-video-title {
+        font-size: 1.8rem;
+    }
+    
+    .feedback-form-container {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .feedback-form-container h1 {
+        font-size: 2rem;
+    }
+
+    .voltar-topo-btn {
+        margin-top: 2rem;
+    }
 }

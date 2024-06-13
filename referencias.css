@@ -1,40 +1,51 @@
+/* CSS da página (referencias.css) */
+
+/* Estilos da seção principal .referencias-page */
 .referencias-page {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0 2rem; /* Adiciona um espaçamento lateral para telas menores */
 }
 
+/* Estilos da caixa de título principal */
 .main-title-box {
-    padding: 2rem 4rem;
+    padding: 2rem; /* Ajusta o padding para telas menores */
     margin-bottom: 3rem;
-    width: 60rem;
+    width: 100%; /* Ajusta a largura para ocupar toda a largura disponível */
+    max-width: 60rem; /* Limita a largura máxima */
 }
 
+/* Estilos dos links de referências */
 .referencias-links {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 1.5rem;
-    width: 80rem;
+    width: 100%; /* Ajusta a largura para ocupar toda a largura disponível */
+    max-width: 80rem; /* Limita a largura máxima */
 }
 
+/* Estilos das imagens de referências */
 .img-ref {
-    width: 20rem;
-    max-height: 26rem;
+    width: 100%; /* Ajusta a largura para ocupar toda a largura disponível */
+    max-width: 20rem; /* Limita a largura máxima */
+    height: auto; /* Mantém a proporção da altura */
 }
 
+/* Estilos dos títulos de referências e vídeos */
 .ref-title, .video-refs-title {
     font-family: "Passero One";
     color: var(--pure-white);
     font-size: 1.8rem;
     border-bottom: 4px solid var(--pure-white);
     width: fit-content;
+    margin: 2rem 0; /* Adiciona margem superior e inferior */
+    padding-bottom: 0.5rem; /* Ajusta o espaçamento abaixo do título */
+    text-align: center; /* Centraliza o texto */
 }
 
-iframe {
-    border: none;
-}
-
+/* Estilos dos vídeos */
 .video-refs {
     margin-top: 3rem;
     width: 100%;
@@ -44,16 +55,54 @@ iframe {
     align-items: center;
 }
 
+/* Estilos dos links de vídeos */
 .videos-links {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
-    margin-top: 2rem;
+    gap: 2rem;
     width: 100%;
-    gap: 5rem;
 }
 
+/* Estilos dos botões de voltar ao topo */
 .vertical-align {
-    margin: 4rem 0;
+    margin: 2rem 0; /* Ajusta a margem */
 }
 
+/* Media Queries para responsividade */
+@media (max-width: 1024px) {
+    .main-title-box {
+        padding: 1.5rem;
+    }
+
+    .referencias-links {
+        max-width: 90%;
+    }
+
+    .img-ref {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 800px) {
+    .main-title-box {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-title-box {
+        font-size: 1.5rem; /* Ajusta o tamanho da fonte para telas menores */
+    }
+
+    .referencias-links {
+        flex-direction: column; /* Altera para coluna em telas menores */
+        align-items: center;
+    }
+
+    .img-ref {
+        width: 100%; /* Ajusta a largura para ocupar toda a largura disponível */
+        max-width: none; /* Remove a largura máxima */
+        height: auto; /* Mantém a proporção da altura */
+    }
+}

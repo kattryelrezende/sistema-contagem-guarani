@@ -132,26 +132,43 @@ body::-webkit-scrollbar-thumb {
 
 /* ----------------------------------------------------------------- */
 
-/* NAVBAR */
+/* Navbar */
 .nav-container {
     width: 100%;
     height: 10vh;
     margin: 0;
     background-color: var(--forest-green);
     display: flex;
-    justify-content: space-evenly;
-    padding: .5rem 0;
-
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 2rem;
 }
 
-.nav-logo {
-    display: flex;
+.nav-logo img {
+    max-height: 100%;
+    max-width: 150px; /* Ajuste conforme necessário */
+}
+
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+.nav-toggle .bar {
+    width: 25px;
+    height: 4px; /* Aumente a espessura */
+    background-color: var(--yellow-golden);
+    margin: 4px 0;
+    transition: 0.4s;
+    border-radius: 4px; /* Arredondar bordas */
 }
 
 .nav-items {
     display: flex;
-    justify-self: flex-end;
     align-items: center;
+    text-align: center;
 }
 
 .nav-items ul {
@@ -160,25 +177,16 @@ body::-webkit-scrollbar-thumb {
     list-style: none;
     font-family: "Passero One";
     font-size: 1.8rem;
-    justify-content: space-between;
 }
 
-.nav-item a{
+.nav-item a {
     color: var(--yellow-golden);
     text-decoration: none;
     margin-right: 2.5rem;
-    text-shadow:
-    -2px -2px 0 var(--dirt-brown),
-     0   -2px 0 var(--dirt-brown),
-     2px -2px 0 var(--dirt-brown),
-     2px  0   0 var(--dirt-brown),
-     2px  2px 0 var(--dirt-brown),
-     0    2px 0 var(--dirt-brown),
-    -2px  2px 0 var(--dirt-brown),
-    -2px  0   0 var(--dirt-brown);
+    text-shadow: -2px -2px 0 var(--dirt-brown), 0 -2px 0 var(--dirt-brown), 2px -2px 0 var(--dirt-brown), 2px 0 0 var(--dirt-brown), 2px 2px 0 var(--dirt-brown), 0 2px 0 var(--dirt-brown), -2px 2px 0 var(--dirt-brown), -2px 0 0 var(--dirt-brown);
 }
 
-.nav-item:last-child{
+.nav-item:last-child {
     margin-right: 0 !important;
 }
 
@@ -317,6 +325,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .wood-title h1 {
+    text-align: center;
     margin: 0;
     font-size: 2.8rem;
     font-family: "Glitter Candy";
@@ -421,5 +430,133 @@ body::-webkit-scrollbar-thumb {
     color: var(--forest-green);
 }
 
+/* Media Queries */
+@media (max-width: 1024px) {
+    .wood-box, .wood-text, .yellow-card {
+        width: 100%;
+    }
 
+    .curiosidades-video-title {
+        font-size: 2rem;
+    }
+}
 
+@media (max-width: 800px) {
+
+    .wood-box {
+        width: 90%; /* Ajusta a largura para 90% da viewport em telas menores */
+        margin: 1rem auto; /* Centraliza a caixa com margem automática */
+        padding: 1rem; /* Reduz o preenchimento para melhor adaptação */
+        font-size: 1rem; /* Ajusta o tamanho da fonte */
+    }
+
+    .yellow-card {
+        width: 90%;
+        margin: 1rem auto;
+        padding: 1.5rem;
+        font-size: 0.8rem;
+    }
+
+    .nav-toggle {
+        display: flex;
+    }
+    
+    .nav-items {
+        display: none;
+        position: absolute;
+        top: 10vh;
+        left: 0;
+        width: 100%;
+        background-color: var(--forest-green);
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .nav-items ul {
+        flex-direction: column;
+    }
+    
+    .nav-item a {
+        margin: 1rem 0;
+        font-size: 1.5rem;
+    }
+    
+    .nav-items.active {
+        display: flex;
+    }
+    
+    /* Add transition for the toggle effect */
+    .nav-toggle.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    
+    .nav-toggle.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .nav-toggle.active .bar:nth-child(3) {
+        transform: translateY(-16px) rotate(-45deg);
+    }
+
+    .wood-title {
+        font-size: 1.2rem;
+    }
+
+    .scg-footer {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .footer-items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-items li {
+        margin-bottom: 1rem;
+    }
+
+    .wood-box, .wood-text, .yellow-card {
+        padding: 1rem;
+    }
+
+    .wood-box p {
+        font-size: 1rem;
+    }
+
+    .curiosidades-video-title {
+        font-size: 1.8rem;
+    }
+
+    .wood-btn, .green-btn, .white-btn {
+        font-size: 1.2rem;
+    }
+
+    .oral-card, .simbologia-card {
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .wood-box, .wood-text, .yellow-card {
+        padding: 0.5rem;
+    }
+
+    .wood-box p {
+        font-size: 0.9rem;
+    }
+
+    .curiosidades-video-title {
+        font-size: 1.5rem;
+    }
+
+    .wood-btn, .green-btn, .white-btn {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .oral-card, .simbologia-card {
+        padding: 0;
+    }
+}

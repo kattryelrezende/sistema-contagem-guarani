@@ -14,19 +14,24 @@
         <a href="index.html" class="nav-logo">
             <img src="src/nav-logo.png" alt="Logo do Sistema de Contagem Guarani">
         </a>
-        <div class="nav-items">
+        <div class="nav-toggle" id="nav-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <div class="nav-items" id="nav-items">
             <ul>
-                <li class="nav-item"><a href="index.html">Página Inicial</a></li>
                 <li class="nav-item"><a href="curiosidades.html">Curiosidades</a></li>
-                <li class="nav-item"><a href="oralidade.html">Oralidade</a></li>
                 <li class="nav-item"><a href="simbolos.html">Símbolos</a></li>
+                <li class="nav-item"><a href="oralidade.html">Oralidade</a></li>
+                <li class="nav-item"><a href="sobre.html">Sobre</a></li>
             </ul>
         </div>
-    </nav>
+    </nav>   
 
     <section class="sobre-page img-background primal-background">
         <div class="leaf-box main-title-box">
-            <h1 class="leaf-title">REFERÊNCIAS</h1>
+            <h1 class="leaf-title">SOBRE NÓS</h1>
         </div>
 
         <div class="devs-container">
@@ -59,10 +64,9 @@
             <img src="src/nav-logo.png" alt="Logo do Sistema de Contagem Guarani">
         </div>
         <ul class="footer-items">
+            <a href="index.html" class="footer-link"><li>Início</li></a>
             <a href="referencias.html" class="footer-link"><li>Fontes</li></a>
-            <li>Institucional</li>
-            <li>Contato</li>
-            <li>Vídeos</li>
+            <a href="sobre.html" class="footer-link"><li>Sobre</li></a>
         </ul>
         <div class="footer-college-logos">
             <img src="src/logo-usp-pequena.png" alt="Logo USP">
@@ -81,5 +85,16 @@
     </script>
     <script src="simbolos.js"></script>
     <script src="script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const navToggle = document.querySelector('.nav-toggle');
+            const navItems = document.querySelector('.nav-items');
+        
+            navToggle.addEventListener('click', function() {
+                navToggle.classList.toggle('active');
+                navItems.classList.toggle('active');
+            });
+        });
+    </script>
 </body>
 </html>

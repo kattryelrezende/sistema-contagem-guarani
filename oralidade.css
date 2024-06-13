@@ -26,8 +26,7 @@
     font-size: 1.3rem;
     width: 70%;
     max-width: 65rem;
-    padding-left: 4rem;
-    padding-right: 4rem;
+    padding: 1rem;
     margin: 2rem 0;
 }
 
@@ -97,9 +96,6 @@
         width: 30rem;
     }
 
-    .oralidade-card-content {
-        padding: 1rem;
-    }
 }
 
 @media (max-width: 480px) {

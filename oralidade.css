@@ -124,3 +124,9 @@
         width: 20rem;
     }
 }
+
+@media (max-width: 410px) {
+    .oralidade-card-content {
+        padding: 1rem;
+    }
+}

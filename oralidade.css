@@ -96,6 +96,10 @@
     .table-1 img, .table-2 img {
         width: 30rem;
     }
+
+    .oralidade-card-content {
+        padding: 1rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -122,11 +126,5 @@
 
     .table-1 img, .table-2 img {
         width: 20rem;
-    }
-}
-
-@media (max-width: 410px) {
-    .oralidade-card-content {
-        padding: 1rem;
     }
 }

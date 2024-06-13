@@ -16,6 +16,10 @@
     width: 60rem;
     max-width: 100%;
     padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #intro-card {

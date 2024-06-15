@@ -290,6 +290,9 @@
 .guarani-info-text {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     width: 100%;
     max-width: 40rem;
     color: var(--pure-white);
@@ -453,14 +456,7 @@
     margin-top: 5rem;
 }
 
-/* MEDIA QUERIES */
-@media (max-width: 1484px){
-    .guarani-info-text {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-}
+
 
 @media (max-width: 1200px) {
     .landing-main {
@@ -497,6 +493,11 @@
 
     .guarani-info-text p {
         text-align: center;
+    }
+
+    .guarani-info-text .green-btn {
+        align-self: center;
+        justify-content: center;
     }
 
     .intro-sistema-container {

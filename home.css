@@ -454,6 +454,13 @@
 }
 
 /* MEDIA QUERIES */
+@media (max-width: 1484px){
+    .guarani-info-text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
 
 @media (max-width: 1200px) {
     .landing-main {
